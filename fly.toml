@@ -1,0 +1,17 @@
+# fly.toml app configuration file generated for yunso on 2023-09-01T16:27:27+08:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "改成你自己的"
+primary_region = "hkg"
+
+[build]
+
+[http_service]
+  internal_port = 80
+  force_https = false
+  auto_stop_machines = false
+  auto_start_machines = false
+  min_machines_running = 0
+  processes = ["app"]
