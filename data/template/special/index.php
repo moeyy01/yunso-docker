@@ -10,7 +10,7 @@
 window.addEventListener('load', function() {
   var hotSearchesContainer = document.getElementById('hot-searches');
 
-  fetch('/api/top.php')
+  fetch('api/top.php')
     .then(response => response.json())
     .then(data => {
       if (data.code === 200) {
@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
         var html = '';
 
         hotSearches.forEach(search => {
-          var url = '/?type=&keyword=' + encodeURIComponent(search.value);
+          var url = './?type=&keyword=' + encodeURIComponent(search.value);
           html += '<span><a href="' + url + '" title="点击打开此热搜" class="badge bg-blue-lt" style="margin-bottom: 10px;">' + search.value + '</a>&nbsp;&nbsp;</span>';
         });
 

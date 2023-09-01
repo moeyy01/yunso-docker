@@ -97,7 +97,7 @@ $("#keyword").val('<?php echo urldecode($word);?>');
     ,curr: <?php echo $page;?>
     ,jump: function(obj,first){
    if(!first){
-   window.location.href="/?type=&keyword=<?php echo $word;?>&page="+obj.curr;
+   window.location.href="./?type=&keyword=<?php echo $word;?>&page="+obj.curr;
     }
     
   }});

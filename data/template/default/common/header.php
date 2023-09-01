@@ -7,7 +7,7 @@ $stime=microtime(true);
 
 
 <ul class="layui-nav  layui-bg-blue" lay-filter=""style="">
-  <li class="layui-nav-item layui-this"><a onclick="read_index()">首页</a></li>
+  <li class="layui-nav-item layui-this"><a href='./'>首页</a></li>
 
 
 

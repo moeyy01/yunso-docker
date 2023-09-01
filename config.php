@@ -12,12 +12,12 @@ define("IFYunso",true);
 define("nowyear",date("Y",time()));
 define("Ver",'XyunSO V0.2');
 
-$ConWebName="MJJ的网盘搜索";//网站名
+$ConWebName="网盘搜索";//网站名
 $ConWebNameM="资源搜索网站 ";//网站副标题
 $ConWeb_keywords="";
 $ConWeb_description="";
 define("API_url",'https://www.yunso.net/api/');// 调用热词/数据提交需要
-define("API_localization",true);// 云化 FALSE 本地化true 需正确配置 API_search_url
+define("API_localization",false);// 云化 FALSE 本地化true 需正确配置 API_search_url
 define("API_search_url",'https://yunso.fly.dev/api/opensearch.php'); // 本地化时需填入搜索接口 
 define("API_urlKey",'91030');// 本地化时 搜索带有的参数 
 

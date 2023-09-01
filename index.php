@@ -76,7 +76,7 @@ $("#search").click(function(){
 	if(isEmpty(keyword)){
 	layer.msg("^-^ 想要找些什么呢?");
 	}else{
-    window.location.href="/?type=&keyword="+keyword;
+    window.location.href="./?type=&keyword="+keyword;
 	}
 
 });
