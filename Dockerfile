@@ -5,7 +5,6 @@ RUN docker-php-ext-install intl
 RUN docker-php-ext-install gmp
 RUN a2enmod rewrite
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-RUN echo "ServerAlias *" >> /etc/apache2/apache2.conf
 COPY . /var/www/html/
 RUN chmod -R 777 -R /var/www
 ENV CONVERT=1
